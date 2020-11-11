@@ -29,7 +29,7 @@ app.get('/new', (req, res) => {
 });
 
 app.get('/anyname', (req, res) => {
-    res.send("<h1>RICHARD GARCIA/h1>")
+    res.send("<h1>RICHARD GARCIA</h1>")
 
 });
 
