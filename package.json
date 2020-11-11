@@ -1,0 +1,23 @@
+{
+  "name": "node-one",
+  "version": "1.0.0",
+  "description": "mi primera aplicacion de node",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardg91-bien"
+  },
+  "keywords": [
+    "yara25767"
+  ],
+  "author": "richard garcia",
+  "license": "ISC"
+}
