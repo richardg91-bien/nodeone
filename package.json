@@ -4,9 +4,14 @@
   "description": "mi primera aplicacion de node",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "boostrap": "^2.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
@@ -15,9 +20,7 @@
     "type": "git",
     "url": "https://github.com/richardg91-bien"
   },
-  "keywords": [
-    "yara25767"
-  ],
+  "keywords": [],
   "author": "richard garcia",
   "license": "ISC"
 }

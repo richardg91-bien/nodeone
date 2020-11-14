@@ -1,42 +1,27 @@
-const express = require('express')
+const express = require('express');
+const app = express();
+const path = require('path');
 
-const app = express()
+// settings
 
-
-app.get('/', (req, res) => {
-    
-    res.sendFile(__dirname + '/mipagina.html')
-});
-
-app.get('/muestra-imagen', (req, res) => {
-    res.sendFile(__dirname + '/imagenpng.png')
-
-});
-
-app.get('/acerca-de', (req, res,) => {
-    res.send("acerca")
-    
-});
-
-app.get('/habilidades', (req, res) => {
-    res.send("habilidades")
-
-});
-
-app.get('/new', (req, res) => {
-    res.send("nueva pagina!!!!")
-
-});
-
-app.get('/anyname', (req, res) => {
-    res.send("<h1>RICHARD GARCIA</h1>")
-
-});
+app.set('views', path.join(__dirname, '/public/views'));
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'ejs');
 
 
+// routes
 
-   
+//app.get('/', (req, res) => {
+ //   res.sendFile(__dirname + '/public/mipagina.html')
+//});
+
+app.use(require('./public/routes/index.js'));
+
+//static files
+
+app.use(express.static(path.join(__dirname, 'public'))); 
     
 
+//listerning the server
 
 app.listen(process.env.PORT || 3000)
